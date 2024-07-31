@@ -42,7 +42,7 @@ dbrm: ## Stop and remove PostgreSQL in Docker
 db: ## Run PostgreSQL in Docker
 	$(info Running PostgreSQL...)
 	docker run -d --name postgres \
-		-p 5432:5432 \
+		-p 5433:5432 \
 		-e POSTGRES_PASSWORD=postgres \
 		-v postgres:/var/lib/postgresql/data \
 		postgres:alpine
