@@ -43,4 +43,10 @@ def get_firefox():
     options = webdriver.FirefoxOptions()
     options.add_argument("--headless")
     return webdriver.Firefox(options=options)    
-    
+
+
+def get_firefox():
+    """Creates a headless Firefox driver"""
+    options = webdriver.FirefoxOptions()
+    options.add_argument("--headless")
+    return webdriver.Firefox(options=options)    
